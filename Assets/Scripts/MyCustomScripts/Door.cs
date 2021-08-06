@@ -9,7 +9,7 @@ public class Door : MonoBehaviour
     [SerializeField] private bool isDoorUnlocked = false;
     
     
-    
+
     public void UnlockDoor()
     {
         isDoorUnlocked = true;

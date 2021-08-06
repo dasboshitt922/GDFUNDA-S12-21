@@ -5,7 +5,8 @@ using UnityEngine;
 public class SpikeBehavior : MonoBehaviour
 {
     private GameObject player;
-   
+    [SerializeField] Transform spawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +24,7 @@ public class SpikeBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            /*DIE FUNCTION*/
-            Debug.Log("yo im fucking dead!");
+           player.transform.position = spawnPoint.transform.position;
         }
     }
 }
